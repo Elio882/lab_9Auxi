@@ -22,6 +22,7 @@ Instalar Typescript para el proyecto y su archivo de configuracion  "tsconfig.js
 ## Tipado de Datos
 Cuando trabajamos con TypeScript en archivos `.tsx`, es importante especificar los tipos de datos correctamente. Componente `Card` que muestra los detalles de un producto, el tipado de la prop `Card` se vería así:
 
+```typescript
 interface Product {
   id: number;
   title: string;
