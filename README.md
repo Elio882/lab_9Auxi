@@ -10,3 +10,30 @@ Currently, two official plugins are available:
 ## Install & Run
 - yarn 
 - yarn dev
+
+
+# React+tsx
+
+Ahora estamos utilizando archivos con extensión `.tsx` en lugar de `.jsx`. Los archivos `.tsx` permiten agregar tipos de TypeScript directamente en el código JSX.
+
+## Configuración de TypeScript
+Instalar Typescript para el proyecto y su archivo de configuracion  "tsconfig.json" en la raiz del proyecto.
+
+## Tipado de Datos
+Cuando trabajamos con TypeScript en archivos `.tsx`, es importante especificar los tipos de datos correctamente. Componente `Card` que muestra los detalles de un producto, el tipado de la prop `Card` se vería así:
+
+interface Product {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  discountPercentage: number;
+  rating: number;
+  stock: number;
+  brand: string;
+  category: string;
+  thumbnail: string;
+  images: string[];
+}
+
+
